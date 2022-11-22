@@ -1,0 +1,8 @@
+.canvas{
+    height: 100%;
+    background-color: black;
+}
+.canvasdiv{
+    height: 100%;
+    overflow: auto;
+}

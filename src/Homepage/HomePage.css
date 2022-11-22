@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+.Home-page{
+    background-color: black;
+    height: 100%;
+    padding: 60px 0px 40px 0px;
+}
+.first-block{
+    height: 100%;
+    width: auto;
+    background-color: black;
+   
+}
+.hello-text{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+.name-coloring:hover{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    font-weight:300;
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    animation: backgroundpositionchange 15s infinite;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+   
+   
+}
+.img-me{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.my-name{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+.col{
+    padding: 0;
+}
+.my-hobbies{
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    
+} 
+.download-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+}
+.social-media > *{
+    color: white;
+    margin: 0 5px 0 5px;
+}
+.social-media{
+    margin-top: 80px;
+    text-align: center;
+   
+}
+.twitter:hover{
+  color:#00acee;
+}
+.github:hover{
+    color: white;
+}
+.instagram:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.linkedin:hover{
+   color: #0e76a8;
+}
+.download-button .downbtn{
+    background-color: #111;
+    width: 300px;
+    height: 50px;
+    color:white;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 4px;
+   
+}
+.downbtn:hover{
+  border:1px groove red;
+  border-color:aqua;
+  animation: colorchange 6s infinite;
+ 
+}
+.downbtn:hover:after{
+    content: ' \2193';
+}
+.downbtn:active{
+    background: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    background-size: 400%;
+    animation: backgroundpositionchange 20s infinite;
+}
+.image-container{
+    position: relative;
+    
+}
+.image-container img{
+    opacity: 1;
+    transition: 1s ease-in;
+    
+}
+.hover-img-content{
+    position: absolute;
+    transition: 1s ease-in;
+    top:40%;
+    left: 20%;
+    color: wheat;
+    opacity: 0;
+}
+.image-container:hover img{
+    opacity: 0.3;
+}
+.image-container:hover .hover-img-content{
+    opacity: 1;  
+}
+
+@keyframes colorchange{
+    0%{
+        border-color:violet;
+    }
+    25%{
+        border-color:yellow;
+    }
+    50%{
+        border-color:blue;
+    }
+    75%{
+        border-color:green;
+    }
+    100%{
+        border-color:orange;
+    }
+}
+
+@keyframes backgroundpositionchange {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
